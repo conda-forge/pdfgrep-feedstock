@@ -12,4 +12,4 @@ pin_run_as_build:
   poppler:
     max_pin: x.x
 poppler:
-- '0.87'
+- '0.88'
