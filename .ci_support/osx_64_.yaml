@@ -16,6 +16,6 @@ pin_run_as_build:
   poppler:
     max_pin: x.x
 poppler:
-- '0.89'
+- '21.03'
 target_platform:
 - osx-64
