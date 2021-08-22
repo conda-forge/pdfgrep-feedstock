@@ -3,7 +3,7 @@ About pdfgrep
 
 Home: https://pdfgrep.org/
 
-Package license: GPL-2.0
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfgrep-feedstock/blob/master/LICENSE.txt)
 
@@ -72,6 +72,7 @@ Installing `pdfgrep` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `pdfgrep` can be installed with:
