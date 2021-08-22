@@ -3,7 +3,7 @@ About pdfgrep
 
 Home: https://pdfgrep.org/
 
-Package license: GPL-2.0
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfgrep-feedstock/blob/master/LICENSE.txt)
 
