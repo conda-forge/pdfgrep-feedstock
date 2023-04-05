@@ -1,11 +1,11 @@
-About pdfgrep
-=============
+About pdfgrep-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfgrep-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pdfgrep.org/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfgrep-feedstock/blob/main/LICENSE.txt)
 
 Summary: A commandline utility to search text in PDF files
 
