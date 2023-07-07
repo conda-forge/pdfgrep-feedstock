@@ -7,7 +7,7 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '11'
+- '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 pcre:
@@ -16,6 +16,6 @@ pin_run_as_build:
   poppler:
     max_pin: x.x
 poppler:
-- '22.12'
+- '23.07'
 target_platform:
 - linux-64
