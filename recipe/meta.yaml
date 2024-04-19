@@ -11,11 +11,12 @@ source:
 
 build:
   skip: true  # [win]
-  number: 13
+  number: 14
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - {{ stdlib("c") }}
     - make
     - pkg-config
