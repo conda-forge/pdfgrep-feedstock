@@ -1,5 +1,5 @@
 {% set name = "pdfgrep" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pdfgrep.org/download/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ef3dca1d749323f08112ffe68e6f4eb7bc25f56f90a2e933db477261b082aba
+  sha256: 0661e531e4c0ef097959aa1c9773796585db39c72c84a02ff87d2c3637c620cb
 
 build:
   skip: true  # [win]
-  number: 14
+  number: 0
 
 requirements:
   build:
