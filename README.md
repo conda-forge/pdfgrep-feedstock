@@ -180,4 +180,5 @@ Feedstock Maintainers
 =====================
 
 * [@julozi](https://github.com/julozi/)
+* [@xhochy](https://github.com/xhochy/)
 

@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 15
+  number: 16
 
 requirements:
   build:
@@ -23,6 +23,7 @@ requirements:
   host:
     - poppler
     - libgcrypt
+    - libgcrypt 1.10
     - pcre
   run:
     - poppler
@@ -49,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - julozi
+    - xhochy
