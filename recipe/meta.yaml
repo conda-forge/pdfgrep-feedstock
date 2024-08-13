@@ -23,6 +23,7 @@ requirements:
   host:
     - poppler
     - libgcrypt
+    - libgcrypt 1.10
     - pcre
   run:
     - poppler
