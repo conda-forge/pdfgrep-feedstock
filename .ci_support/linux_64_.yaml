@@ -17,6 +17,6 @@ docker_image:
 pcre:
 - '8'
 poppler:
-- '24.11'
+- '24.12'
 target_platform:
 - linux-64
