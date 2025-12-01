@@ -19,6 +19,6 @@ macos_machine:
 pcre:
 - '8'
 poppler:
-- '25.07'
+- '25.11'
 target_platform:
 - osx-64
