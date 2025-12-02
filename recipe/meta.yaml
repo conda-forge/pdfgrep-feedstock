@@ -25,6 +25,7 @@ requirements:
     - libgcrypt
     - libgcrypt 1.10
     - pcre
+    - zlib
   run:
     - poppler
     - libgcrypt
