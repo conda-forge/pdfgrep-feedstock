@@ -1,52 +1,56 @@
-{% set name = "pdfgrep" %}
-{% set version = "2.2.0" %}
+schema_version: 1
+
+context:
+  name: pdfgrep
+  version: 2.2.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pdfgrep.org/download/{{ name }}-{{ version }}.tar.gz
+  url: https://pdfgrep.org/download/${{ name }}-${{ version }}.tar.gz
   sha256: 0661e531e4c0ef097959aa1c9773796585db39c72c84a02ff87d2c3637c620cb
 
 build:
-  skip: true  # [win]
   number: 4
+  skip: win
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
-    - {{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
+    - ${{ stdlib("c") }}
     - make
     - pkg-config
   host:
     - poppler
     - libgcrypt
-    - libgcrypt 1.10
+    - libgcrypt 1.10.*
     - pcre
+    - expat
     - zlib
   run:
     - poppler
     - libgcrypt
     - pcre
 
-test:
-  commands:
-    - pdfgrep --version
+tests:
+  - script:
+      - pdfgrep --version
 
 about:
-  home: https://pdfgrep.org/
   license: GPL-2.0-only
   license_file: LICENSE.txt
-  summary: 'A commandline utility to search text in PDF files'
+  summary: A commandline utility to search text in PDF files
   description: |
     Search for PATTERN in each PDF FILE and print matching lines. By default,
     PATTERN is an extended regular expression.
     pdfgrep tries to be mostly compatible with GNU grep with some PDF-specific
     distinctions and additional options.
-  doc_url: https://pdfgrep.org/doc.html
-  dev_url: https://gitlab.com/pdfgrep/pdfgrep
+  homepage: https://pdfgrep.org/
+  repository: https://gitlab.com/pdfgrep/pdfgrep
+  documentation: https://pdfgrep.org/doc.html
 
 extra:
   recipe-maintainers:
