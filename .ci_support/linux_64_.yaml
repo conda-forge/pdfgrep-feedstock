@@ -18,3 +18,5 @@ poppler:
 - '25.11'
 target_platform:
 - linux-64
+zlib:
+- '1'
