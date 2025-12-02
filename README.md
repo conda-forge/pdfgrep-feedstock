@@ -18,7 +18,6 @@ PATTERN is an extended regular expression.
 pdfgrep tries to be mostly compatible with GNU grep with some PDF-specific
 distinctions and additional options.
 
-
 Current build status
 ====================
 
