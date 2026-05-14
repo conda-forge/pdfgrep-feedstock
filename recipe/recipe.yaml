@@ -25,6 +25,7 @@ requirements:
     - pkg-config
   host:
     - poppler
+    - freetype
     - libgcrypt
     - libgcrypt 1.10.*
     - pcre
