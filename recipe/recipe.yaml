@@ -1,19 +1,18 @@
 schema_version: 1
 
 context:
-  name: pdfgrep
   version: 2.2.0
 
 package:
-  name: ${{ name|lower }}
+  name: pdfgrep
   version: ${{ version }}
 
 source:
-  url: https://pdfgrep.org/download/${{ name }}-${{ version }}.tar.gz
+  url: https://pdfgrep.org/download/pdfgrep-${{ version }}.tar.gz
   sha256: 0661e531e4c0ef097959aa1c9773796585db39c72c84a02ff87d2c3637c620cb
 
 build:
-  number: 8
+  number: 9
   skip: win
 
 requirements:
